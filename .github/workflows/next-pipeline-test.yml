@@ -1,7 +1,7 @@
 name: next-pipeline-test
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
