@@ -1,5 +1,5 @@
 #!/bin/bash
-REPOSITORY=/srv/server/
+REPOSITORY=/srv/
 
 cd $REPOSITORY
 
