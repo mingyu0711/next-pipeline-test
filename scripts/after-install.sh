@@ -1,12 +1,12 @@
 #!/bin/bash
 REPOSITORY=/srv/server
 
-# nvm 환경 설정 로드 (nvm이 설치된 위치에 따라 다를 수 있음)
-export NVM_DIR="$HOME/.nvm"
+# NVM 환경 설정 로드
+export NVM_DIR="/home/ubuntu/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # npm과 pm2 경로 추가
-export PATH=$PATH:/root/.nvm/versions/node/v20.18.0/bin
+export PATH=$PATH:/home/ubuntu/.nvm/versions/node/v20.18.0/bin
 
 # 디렉토리 이동
 cd $REPOSITORY
