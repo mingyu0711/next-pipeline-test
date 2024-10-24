@@ -3,10 +3,10 @@ os: linux
 
 files:
   - source: /
-    destination: /srv/server
+    destination: /srv/server/
     overwrite: yes
 permissions:
-  - object: /srv/server
+  - object: /srv/server/
     owner: ubuntu
     group: ubuntu
     mode: 755
@@ -14,4 +14,4 @@ hooks:
   AfterInstall:
     - location: scripts/after-install.sh
       timeout: 600
-      runas: ubuntu
+      runas: root
