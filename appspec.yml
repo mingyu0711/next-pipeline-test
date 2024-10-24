@@ -1,0 +1,17 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /srv/server
+    overwrite: yes
+permissions:
+  - object: /srv/server
+    owner: ubuntu
+    group: ubuntu
+    mode: 755
+hooks:
+  AfterInstall:
+    - location: scripts/after-install.sh
+      timeout: 300
+      runas: root
