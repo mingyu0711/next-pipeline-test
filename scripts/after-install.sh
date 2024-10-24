@@ -1,8 +1,8 @@
 #!/bin/bash
-REPOSITORY=/srv/
+REPOSITORY=/srv/server
 
 cd $REPOSITORY
 
-sudo npm install
+sudo npm ci
 
 sudo pm2 start npm --name "server" -- start
